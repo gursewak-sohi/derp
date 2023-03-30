@@ -1,0 +1,38 @@
+// Variable SCSS
+// Fonts
+$font-Handjet: ('Handjet', 'comic' sans-serif);
+$font-Roboto: ('Roboto', sans-serif);
+// Colors
+$dark: #030303;
+$white: #FFFFFF;
+$primary: #FFF50B;
+$blue: #0094FF;
+$navy:#000F2F;
+$pink: #BD00FF;
+$pink-800: #FF12C9;
+$pink-700: #FF64F1;
+$pink-900: #301B35;
+$gray-600: #505050;
+$gray-800: #2B2726;
+$pink-500: #E3A1D4;
+$green: #12FF54;
+$black: #000000;
+$link: #0094FF;
+// Breakpoints
+$mobile-width: 767px;
+$tablet-width: 991px;
+$laptop-width: 1199px;
+$desktop-width: 1399px;
+// Container Sizes
+$container: 1431px;
+$gutter-x: 32px;
+$gutter-x-xs: 16px;
+// Transition
+$link-transition: 200ms all cubic-bezier(.49, .025, .49, 1);
+$btn-transition: 300ms background-color cubic-bezier(.49, .025, .49, 1),
+300ms color cubic-bezier(.49, .025, .49, 1),
+300ms border-color cubic-bezier(.49, .025, .49, 1),
+300ms opacity cubic-bezier(.49, .025, .49, 1),
+300ms box-shadow cubic-bezier(.49, .025, .49, 1),
+300ms stroke cubic-bezier(.49, .025, .49, 1),
+300ms fill cubic-bezier(.49, .025, .49, 1);

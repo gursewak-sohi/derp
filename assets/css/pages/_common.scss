@@ -1,0 +1,16 @@
+// Common SCSS
+body {
+    background-color: $pink-900;
+}
+
+main {
+    position: relative;
+    z-index: 10;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+section {
+    position: absolute;
+    width: 100%;
+}

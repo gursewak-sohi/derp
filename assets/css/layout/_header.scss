@@ -1,0 +1,26 @@
+// Header SCSS
+.header-section {
+    background-color: $black;
+    padding: 16px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 90;
+    & .header-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & .header-logo {
+            @include mobile {
+                width: 160px;
+                margin-left: -10px;
+            }
+        }
+        & .header-links {
+            display: flex;
+            align-items: center;
+            column-gap: 9px;
+        }
+    }
+}

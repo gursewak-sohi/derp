@@ -1,0 +1,72 @@
+//  Ulilites SCSS
+.container {
+    max-width: $container;
+    padding-left: $gutter-x;
+    padding-right: $gutter-x;
+    margin: 0 auto;
+    @include tablet {
+        padding-left: $gutter-x-xs;
+        padding-right: $gutter-x-xs;
+    }
+}
+
+.collapse {
+    overflow: hidden;
+    transition: height 300ms cubic-bezier(.49, .025, .49, 1);
+    &:not(.active) {
+        height: 0;
+    }
+}
+
+[data-collapse],
+[data-toggler] {
+    & .collapse-arrow {
+        transition: 300ms all cubic-bezier(.49, .025, .49, 1);
+    }
+    &.active .collapse-arrow {
+        transform: rotate(-180deg);
+    }
+}
+
+.link-effect {
+    position: relative;
+    white-space: nowrap;
+    &::before,
+    &::after {
+        @extend %absolute-content;
+        bottom: 2px;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        will-change: transform;
+        left: 0;
+        background-color: currentColor;
+        transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+    }
+    &::before {
+        opacity: 0;
+        transform-origin: left;
+    }
+    &::after {
+        opacity: 1;
+        transform-origin: right;
+    }
+    &:hover {
+        &::before,
+        &::after {
+            transform: scaleX(1);
+        }
+        &::before {
+            opacity: 1;
+        }
+        &::after {
+            opacity: 0;
+        }
+    }
+}
+
+.animate-up {
+    transform: translateY(15px);
+    opacity: 0;
+    transition: opacity .65s cubic-bezier(.42, 0, .002, 1), transform .65s cubic-bezier(.42, 0, .002, 1);
+}

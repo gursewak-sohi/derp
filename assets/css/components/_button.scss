@@ -1,0 +1,125 @@
+//  Button SCSS
+.btn {
+    cursor: pointer;
+    font-family: $font-Handjet;
+    border: none;
+    transition: $btn-transition;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    flex-shrink: 0;
+    & svg {
+        flex-shrink: 0;
+        & * {
+            transition: $btn-transition;
+        }
+    }
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.btn-md {
+    font-weight: 800;
+    font-size: 22px;
+    padding: 8px 13px 7px;
+    letter-spacing: 0.04em;
+    column-gap: 7px;
+    @include tablet {
+        padding: 8px 8px 7px;
+    }
+    & img {
+        position: relative;
+        top: -1px;
+    }
+    & span {
+        @include tablet {
+            display: none;
+        }
+    }
+}
+
+.btn-xl {
+    font-weight: 800;
+    font-size: 35px;
+    padding: 10px 15px;
+    letter-spacing: 0.04em;
+    column-gap: 12px;
+    @include mobile {
+        width: 100%;
+        font-size: 25px;
+    }
+    & img {
+        @include mobile {
+            width: 27px;
+        }
+    }
+    & span {
+        position: relative;
+        top: 2px;
+    }
+}
+
+.btn-primary {
+    background-color: $primary;
+    color: $black;
+    &:hover {
+        background-color: $primary;
+        border-color: $primary;
+        color: $black;
+    }
+}
+
+.btn-twitter {
+    background-color: $blue;
+    color: $white;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &:hover {
+        background-color: $blue;
+        border-color: $blue;
+        color: $white;
+    }
+}
+
+.btn-discord {
+    background-color: $pink;
+    color: $white;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &:hover {
+        background-color: $pink;
+        border-color: $pink;
+        color: $white;
+    }
+}
+
+.btn-next {
+    width: 267px;
+    height: 79px;
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: 0.08em;
+    background-color: transparent;
+    line-height: 1;
+    padding-top: 7px;
+    @include mobile {
+        width: 157px;
+        height: 59px;
+        font-size: 37px;
+        padding-top: 5px;
+    }
+}
+
+.btn-gray {
+    color: $gray-600;
+    border: 3px solid $gray-600;
+}
+
+.btn-white {
+    color: $white;
+    border: 3px solid $white;
+}
