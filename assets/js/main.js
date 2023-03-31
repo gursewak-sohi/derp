@@ -116,11 +116,24 @@
     function toEmbraceFromTop() {
         document.getElementById('embraceVideo').play();
         animating = true;
+
         let tl = gsap.timeline({
-            onComplete: () => animating = false
+            onComplete: () => {
+                animating = false
+                initCarousel()
+            }
         });
         tl.to(".embrace-section", { display: "block", duration: 0.7, delay: 0, ease: "Power4.out" }, 'fifth')
             .to(".embrace-section", { autoAlpha: 1, duration: 0.7, delay: 0.5, ease: "Power4.out" }, 'fifth')
+    }
+
+    function initCarousel() {
+        if ($("#embraceCarousel").length > 0) {
+            $("#embraceCarousel").carouselTicker({
+                direction: "prev",
+                speed: 2,
+            });
+        }
     }
 
 

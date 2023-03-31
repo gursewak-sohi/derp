@@ -27,15 +27,11 @@
 .btn-md {
     font-weight: 800;
     font-size: 22px;
-    padding: 8px 13px 7px;
+    padding: 8px 13px;
     letter-spacing: 0.04em;
     column-gap: 7px;
     @include tablet {
         padding: 8px 8px 7px;
-    }
-    & img {
-        position: relative;
-        top: -1px;
     }
     & span {
         @include tablet {
@@ -58,10 +54,6 @@
         @include mobile {
             width: 27px;
         }
-    }
-    & span {
-        position: relative;
-        top: 2px;
     }
 }
 
@@ -105,12 +97,10 @@
     letter-spacing: 0.08em;
     background-color: transparent;
     line-height: 1;
-    padding-top: 7px;
     @include mobile {
         width: 157px;
         height: 59px;
         font-size: 37px;
-        padding-top: 5px;
     }
 }
 

@@ -1,82 +1,74 @@
 // Fonts SCSS
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+// @font-face {
+//     font-family: 'Handjet';
+//     src: url('../assets/fonts/Handjet/thin/font.eot');
+//     src: url('../assets/fonts/Handjet/thin/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/thin/font.woff2') format('woff2'), url('../assets/fonts/Handjet/thin/font.woff') format('woff'), url('../assets/fonts/Handjet/thin/font.ttf') format('truetype');
+//     font-weight: 100;
+//     font-style: normal;
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: 'Handjet';
+//     src: url('../assets/fonts/Handjet/extralight/font.eot');
+//     src: url('../assets/fonts/Handjet/extralight/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/extralight/font.woff2') format('woff2'), url('../assets/fonts/Handjet/extralight/font.woff') format('woff'), url('../assets/fonts/Handjet/extralight/font.ttf') format('truetype');
+//     font-weight: 200;
+//     font-style: normal;
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: 'Handjet';
+//     src: url('../assets/fonts/Handjet/light/font.eot');
+//     src: url('../assets/fonts/Handjet/light/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/light/font.woff2') format('woff2'), url('../assets/fonts/Handjet/light/font.woff') format('woff'), url('../assets/fonts/Handjet/light/font.ttf') format('truetype');
+//     font-weight: 300;
+//     font-style: normal;
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: 'Handjet';
+//     src: url('../assets/fonts/Handjet/regular/font.eot');
+//     src: url('../assets/fonts/Handjet/regular/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/regular/font.woff2') format('woff2'), url('../assets/fonts/Handjet/regular/font.woff') format('woff'), url('../assets/fonts/Handjet/regular/font.ttf') format('truetype');
+//     font-weight: 400;
+//     font-style: normal;
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: 'Handjet';
+//     src: url('../assets/fonts/Handjet/medium/font.eot');
+//     src: url('../assets/fonts/Handjet/medium/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/medium/font.woff2') format('woff2'), url('../assets/fonts/Handjet/medium/font.woff') format('woff'), url('../assets/fonts/Handjet/medium/font.ttf') format('truetype');
+//     font-weight: 500;
+//     font-style: normal;
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: 'Handjet';
+//     src: url('../assets/fonts/Handjet/semibold/font.eot');
+//     src: url('../assets/fonts/Handjet/semibold/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/semibold/font.woff2') format('woff2'), url('../assets/fonts/Handjet/semibold/font.woff') format('woff'), url('../assets/fonts/Handjet/semibold/font.ttf') format('truetype');
+//     font-weight: 600;
+//     font-style: normal;
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: 'Handjet';
+//     src: url('../assets/fonts/Handjet/bold/font.eot');
+//     src: url('../assets/fonts/Handjet/bold/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/bold/font.woff2') format('woff2'), url('../assets/fonts/Handjet/bold/font.woff') format('woff'), url('../assets/fonts/Handjet/bold/font.ttf') format('truetype');
+//     font-weight: 700;
+//     font-style: normal;
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: 'Handjet';
+//     src: url('../assets/fonts/Handjet/extrabold/font.eot');
+//     src: url('../assets/fonts/Handjet/extrabold/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/extrabold/font.woff2') format('woff2'), url('../assets/fonts/Handjet/extrabold/font.woff') format('woff'), url('../assets/fonts/Handjet/extrabold/font.ttf') format('truetype');
+//     font-weight: 800;
+//     font-style: normal;
+//     font-display: swap;
+// }
 @font-face {
     font-family: 'Handjet';
-    src: url('../assets/fonts/Handjet/thin/font.eot');
-    src: url('../assets/fonts/Handjet/thin/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/thin/font.woff2') format('woff2'), url('../assets/fonts/Handjet/thin/font.woff') format('woff'), url('../assets/fonts/Handjet/thin/font.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Handjet';
-    src: url('../assets/fonts/Handjet/extralight/font.eot');
-    src: url('../assets/fonts/Handjet/extralight/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/extralight/font.woff2') format('woff2'), url('../assets/fonts/Handjet/extralight/font.woff') format('woff'), url('../assets/fonts/Handjet/extralight/font.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Handjet';
-    src: url('../assets/fonts/Handjet/light/font.eot');
-    src: url('../assets/fonts/Handjet/light/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/light/font.woff2') format('woff2'), url('../assets/fonts/Handjet/light/font.woff') format('woff'), url('../assets/fonts/Handjet/light/font.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Handjet';
-    src: url('../assets/fonts/Handjet/regular/font.eot');
-    src: url('../assets/fonts/Handjet/regular/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/regular/font.woff2') format('woff2'), url('../assets/fonts/Handjet/regular/font.woff') format('woff'), url('../assets/fonts/Handjet/regular/font.ttf') format('truetype');
+    src: url('../assets/fonts/Handjet/Handjet.eot');
+    src: url('../assets/fonts/Handjet/Handjet.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/Handjet.woff2') format('woff2'), url('../assets/fonts/Handjet/Handjet.woff') format('woff'), url('../assets/fonts/Handjet/Handjet.ttf') format('truetype');
     font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Handjet';
-    src: url('../assets/fonts/Handjet/medium/font.eot');
-    src: url('../assets/fonts/Handjet/medium/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/medium/font.woff2') format('woff2'), url('../assets/fonts/Handjet/medium/font.woff') format('woff'), url('../assets/fonts/Handjet/medium/font.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Handjet';
-    src: url('../assets/fonts/Handjet/semibold/font.eot');
-    src: url('../assets/fonts/Handjet/semibold/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/semibold/font.woff2') format('woff2'), url('../assets/fonts/Handjet/semibold/font.woff') format('woff'), url('../assets/fonts/Handjet/semibold/font.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Handjet';
-    src: url('../assets/fonts/Handjet/bold/font.eot');
-    src: url('../assets/fonts/Handjet/bold/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/bold/font.woff2') format('woff2'), url('../assets/fonts/Handjet/bold/font.woff') format('woff'), url('../assets/fonts/Handjet/bold/font.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Handjet';
-    src: url('../assets/fonts/Handjet/extrabold/font.eot');
-    src: url('../assets/fonts/Handjet/extrabold/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/extrabold/font.woff2') format('woff2'), url('../assets/fonts/Handjet/extrabold/font.woff') format('woff'), url('../assets/fonts/Handjet/extrabold/font.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Handjet';
-    src: url('../assets/fonts/Handjet/black/font.eot');
-    src: url('../assets/fonts/Handjet/black/font.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Handjet/black/font.woff2') format('woff2'), url('../assets/fonts/Handjet/black/font.woff') format('woff'), url('../assets/fonts/Handjet/black/font.ttf') format('truetype');
-    font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
