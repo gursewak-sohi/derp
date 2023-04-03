@@ -15,14 +15,21 @@
     <!-- Header Section -->
     <header class="header-section">
         <div class="container">
-            <div class="header-block">
+            <div id="toggleNav" class="header-block">
                 <a href="index.html" class="header-logo">
                     <img src="assets/images/logo.png" width="224" height="53" alt="logo" />
                 </a>
-                <div class="header-links">
-                    <a href="javascript:;" class="btn btn-md btn-primary">EMBRACE <span>THE DERP</span> </a>
-                    <a href="javascript:;" class="btn btn-md btn-twitter"><img src="assets/images/twitter.png" width="25" height="23" alt="twitter" /><span>FOLLOW TWITTER</span></a>
-                    <a href="javascript:;" class="btn btn-md btn-discord"><img src="assets/images/discord.png" width="25" height="22" alt="discord" /><span>JOIN OUR DISCORD</span></a>
+                <button id="toggleBtn" type="button" class="toggler">
+                    <span></span>
+                </button>
+                <div class="menu-wrapper">
+                    <div class="header-wrapper">
+                        <div class="header-links">
+                            <a href="javascript:;" class="btn btn-md btn-primary">EMBRACE <span>THE DERP</span> </a>
+                            <a href="javascript:;" class="btn btn-md btn-twitter"><img src="assets/images/twitter.png" width="25" height="23" alt="twitter" /><span>FOLLOW TWITTER</span></a>
+                            <a href="javascript:;" class="btn btn-md btn-discord"><img src="assets/images/discord.png" width="25" height="22" alt="discord" /><span>JOIN OUR DISCORD</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -116,7 +123,7 @@
         <!-- Hope Section -->
         <section class="hope-section">
             <div class="hope-block">
-                <div class="hope-card" style="background-image: url(assets/images/png/notes.png);">
+                <div class="hope-card">
                     <div class="hope-text">
                         <h1>THE NEW HOPE</h1>
                         <h2>GENESIS - DERP CELLS NEW ORGANISM FOUND. ORIGIN UNKNOWN.</h2>
@@ -155,7 +162,11 @@
         <!-- Embrace Section -->
         <section class="embrace-section" style="background-image: url(assets/images/png/black-lines.png);">
             <div class="embrace-header">
-                <video id="embraceVideo" poster="assets/images/gifs/embrace.gif" src="assets/videos/embrace.mp4"></video>
+                <!-- <video preload="auto" id="embraceVideo" src="assets/videos/embrace.webm"></video> -->
+                <video id="embraceVideo">
+                    <source src="assets/videos/embrace.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                  </video>
             </div>
 
             <div class="embrace-cockpit">
@@ -284,6 +295,8 @@
             </div>
             <div class="cockpit-back">CLICK THE MONITOR TO GO BACK</div>
         </div>
+
+
     </main>
 
 

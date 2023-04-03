@@ -7,13 +7,17 @@
     right: 0;
     top: 0;
     z-index: 90;
+    @include tablet {
+        padding: 11px 0;
+    }
     & .header-block {
         display: flex;
         align-items: center;
         justify-content: space-between;
         & .header-logo {
+            z-index: 10;
             @include mobile {
-                width: 160px;
+                width: 200px;
                 margin-left: -10px;
             }
         }
@@ -21,6 +25,106 @@
             display: flex;
             align-items: center;
             column-gap: 9px;
+            @include tablet {
+                flex-direction: column;
+                row-gap: 12px;
+            }
+            & .btn {
+                @include tablet {
+                    width: 100%;
+                }
+            }
+        }
+        & .toggler {
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+            position: relative;
+            display: none;
+            outline: none;
+            width: 43px;
+            height: 23px;
+            transition: 0.6s all ease;
+            @include tablet {
+                display: block;
+            }
+            & span {
+                border-radius: 2px;
+                width: 43px;
+                height: 5px;
+                display: block;
+                background-color: $white;
+                position: relative;
+                transition: all .1s;
+                &::before,
+                &::after {
+                    border-radius: 2px;
+                    transition: all .3s;
+                    position: absolute;
+                    left: 0;
+                    content: "";
+                    height: 5px;
+                    background-color: $white;
+                }
+                &::before {
+                    width: 43px;
+                    top: 10px;
+                }
+                &::after {
+                    width: 43px;
+                    bottom: 11px;
+                }
+            }
+        }
+        & .menu-wrapper {
+            display: flex;
+            align-items: center;
+            position: relative;
+            transition: all 0.6s ease;
+            @include tablet {
+                flex-direction: column;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                padding: 64px 15px 38px;
+                box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px -1px rgba(16, 24, 40, 0.1);
+                visibility: hidden;
+                opacity: 0;
+                transform: translateY(-100%);
+                transform-origin: top;
+                transition: 1s all cubic-bezier(.08, 1.0, .07, 1);
+                background-color: $black;
+                height: 300px;
+                justify-content: center;
+                overflow: hidden;
+            }
+        }
+        &.active {
+            & .toggler {
+                & span {
+                    background-color: transparent;
+                    &::before {
+                        background-color: $white;
+                        width: 43px;
+                        transform: translateY(-9px) translateX(0px) rotate(-45deg);
+                    }
+                    &::after {
+                        background-color: $white;
+                        width: 43px;
+                        transform: translateY(12px) translateX(0px) rotate(45deg);
+                    }
+                }
+            }
+            & .menu-wrapper {
+                @include tablet {
+                    visibility: visible;
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
         }
     }
 }

@@ -4,6 +4,33 @@
     let body = document.body;
     body.classList.add('loaded');
 
+    // Toggle Menu
+    const toggleMenu = (toggleID, toggleNav) => {
+        let toggleLink = document.querySelector(toggleID),
+            toggleItem = document.querySelector(toggleNav),
+            headerLinks = document.querySelectorAll("#toggleNav a"),
+            root = document.getElementsByTagName('html')[0];
+        headerLinks.forEach(link => {
+            link.onclick = (e) => {
+                root.classList.remove('hide-scroll');
+                toggleItem.classList.remove("active");
+            }
+        });
+        if (toggleLink && toggleItem) {
+            toggleLink.onclick = () => {
+                if (toggleItem.classList.contains('active')) {
+                    root.classList.remove('hide-scroll');
+                    toggleItem.classList.remove("active");
+                } else {
+                    root.classList.add('hide-scroll');
+                    toggleItem.classList.add("active");
+                }
+            }
+        }
+    }
+    toggleMenu('#toggleBtn', '#toggleNav');
+
+
     let animating;
     Observer.create({
         target: ".base-section",
@@ -114,7 +141,10 @@
     });
 
     function toEmbraceFromTop() {
-        document.getElementById('embraceVideo').play();
+        setTimeout(() => {
+            document.getElementById('embraceVideo').play();
+        }, 1000);
+
         animating = true;
 
         let tl = gsap.timeline({
