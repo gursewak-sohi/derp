@@ -452,7 +452,7 @@
             padding: 0 20px;
         }
         & .hope-card {
-            background-image: url(../../assets/images/png/notes-xl.png);
+            background-image: url(../assets/images/png/notes-xl.png);
             width: 722px;
             height: 871px;
             background-size: cover;
@@ -461,7 +461,7 @@
             flex-direction: column;
             align-items: flex-end;
             @include mobile {
-                background-image: url(../../assets/images/png/notes.png);
+                background-image: url(../assets/images/png/notes.png);
                 align-items: center;
                 width: 100%;
                 height: 470px;
