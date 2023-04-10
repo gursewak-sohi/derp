@@ -256,6 +256,7 @@
             text-align: center;
             letter-spacing: 0.08em;
             text-transform: uppercase;
+            will-change: transform;
             @include tablet {
                 font-size: 55px;
                 line-height: 70px;
@@ -273,6 +274,7 @@
             max-width: 1920px;
             transform: translateX(-50%);
             bottom: -2100px;
+            will-change: transform;
             @include mobile {
                 max-width: 768px;
                 bottom: -620px;
@@ -284,6 +286,7 @@
             width: 1920px;
             transform: translateX(-50%);
             bottom: -520px;
+            will-change: transform;
             @include mobile {
                 max-width: 768px;
                 bottom: -230px;
@@ -296,6 +299,7 @@
             height: 344px;
             transform: translateX(-50%);
             bottom: -120px;
+            will-change: transform;
             @include mobile {
                 max-width: 768px;
                 bottom: -160px;
@@ -307,6 +311,7 @@
             width: 1920px;
             transform: translateX(-50%);
             bottom: -690px;
+            will-change: transform;
             @include mobile {
                 max-width: 768px;
                 bottom: -130px;
@@ -320,6 +325,7 @@
             transform: translateX(-50%);
             bottom: -140px;
             margin-left: 20px;
+            will-change: transform;
             @include mobile {
                 max-width: 768px;
                 bottom: -320px;
@@ -333,6 +339,7 @@
             left: 50%;
             transform: translateX(-50%);
             top: -1110px;
+            will-change: transform;
             @include mobile {
                 width: 319px;
                 height: 844px;
@@ -356,6 +363,7 @@
             height: 969px;
             transform: translateX(-50%);
             bottom: -1240px;
+            will-change: transform;
             @include mobile {
                 width: 610px;
                 height: 610px;
