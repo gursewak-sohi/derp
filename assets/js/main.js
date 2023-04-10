@@ -9,17 +9,17 @@
 
 
 
-        let baseAudio = new Audio('../assets/audio/1-base-scene.mp3'),
-            transitiontoTime = new Audio('../assets/audio/2-transition-to-time.mp3'),
-            time = new Audio('../assets/audio/3-time.mp3'),
-            timeLine = new Audio('../assets/audio/4-time-line.mp3'),
-            storyOneBomb = new Audio('../assets/audio/5-story-one-bomb.mp3'),
-            storyOneBurn = new Audio('../assets/audio/6-burning.mp3'),
-            storyTwoStart = new Audio('../assets/audio/7-story-two-start.mp3'),
-            storyTwoBomb = new Audio('../assets/audio/8-story-two-bomb.mp3'),
-            hope = new Audio('../assets/audio/9-hope.mp3'),
-            derp = new Audio('../assets/audio/10-derp.mp3'),
-            btnClick = new Audio('../assets/audio/button.mp3');
+        let baseAudio = new Audio('assets/audio/1-base-scene.mp3'),
+            transitiontoTime = new Audio('assets/audio/2-transition-to-time.mp3'),
+            time = new Audio('assets/audio/3-time.mp3'),
+            timeLine = new Audio('assets/audio/4-time-line.mp3'),
+            storyOneBomb = new Audio('assets/audio/5-story-one-bomb.mp3'),
+            storyOneBurn = new Audio('assets/audio/6-burning.mp3'),
+            storyTwoStart = new Audio('assets/audio/7-story-two-start.mp3'),
+            storyTwoBomb = new Audio('assets/audio/8-story-two-bomb.mp3'),
+            hope = new Audio('assets/audio/9-hope.mp3'),
+            derp = new Audio('assets/audio/10-derp.mp3'),
+            btnClick = new Audio('assets/audio/button.mp3');
 
 
         baseAudio.addEventListener('ended', function() {
