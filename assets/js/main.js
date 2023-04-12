@@ -7,8 +7,6 @@
         body.classList.add('loaded');
 
 
-
-
         let baseAudio = new Audio('assets/audio/1-base-scene.mp3'),
             transitiontoTime = new Audio('assets/audio/2-transition-to-time.mp3'),
             time = new Audio('assets/audio/3-time.mp3'),
@@ -26,6 +24,7 @@
             this.currentTime = 0;
             this.play();
         }, false);
+
         time.addEventListener('ended', function() {
             this.currentTime = 0;
             this.play();

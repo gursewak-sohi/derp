@@ -28,3 +28,9 @@ section {
     align-items: center;
     flex-direction: column;
 }
+
+.audio-files {
+    position: fixed;
+    top: -9999px;
+    left: -99999px;
+}
