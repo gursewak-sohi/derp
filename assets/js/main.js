@@ -2,6 +2,8 @@
 
     // JS loaded
     document.addEventListener("DOMContentLoaded", function(event) {
+        // window.addEventListener("load", function() {
+
 
         let body = document.body;
         body.classList.add('loaded');
@@ -376,4 +378,5 @@
                 .to(".derp-section", { autoAlpha: 1, duration: 0.7, delay: 0, ease: "Power4.out" }, 'seventh')
         }
     });
+    // }, false);
 })();
