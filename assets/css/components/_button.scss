@@ -73,13 +73,13 @@
     }
 }
 
-.btn-discord {
-    background-color: $pink;
+.btn-telegram {
+    background-color: $blue-dark;
     color: $white;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     &:hover {
-        background-color: $pink;
-        border-color: $pink;
+        background-color: $blue-dark;
+        border-color: $blue-dark;
         color: $white;
     }
 }

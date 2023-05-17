@@ -27,6 +27,9 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    & img {
+        margin-left: -40px;
+    }
 }
 
 .audio-files {

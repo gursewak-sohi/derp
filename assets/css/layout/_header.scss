@@ -17,7 +17,7 @@
         & .header-logo {
             z-index: 10;
             @include mobile {
-                width: 200px;
+                width: 180px;
                 margin-left: -10px;
             }
         }
